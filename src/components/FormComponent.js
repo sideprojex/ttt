@@ -5,11 +5,11 @@ import SecondStep from "./SecondStep"
 import ThirdStep from "./ThirdStep"
 import { multiStepContext } from "../context/StepContext"
 import { Stepper, Step, StepLabel, Container, Grid } from "@material-ui/core"
-import SettingsIcon from "@material-ui/icons/Settings"
-import GroupAddIcon from "@material-ui/icons/GroupAdd"
-import VideoLabelIcon from "@material-ui/icons/VideoLabel"
-import AmpStoriesIcon from "@material-ui/icons/AmpStories"
-import ReceiptIcon from "@material-ui/icons/Receipt"
+import Battery20Icon from "@material-ui/icons/Battery20"
+import Battery50Icon from "@material-ui/icons/Battery50"
+import Battery60Icon from "@material-ui/icons/Battery60"
+import Battery80Icon from "@material-ui/icons/Battery80"
+import BatteryFullIcon from "@material-ui/icons/BatteryFull"
 import { makeStyles } from "@material-ui/core/styles"
 import clsx from "clsx"
 import TermsStepper from "./TermsStepper"
@@ -50,11 +50,11 @@ const FormComponent = () => {
     const { active, completed } = props
 
     const icons = {
-      1: <ReceiptIcon />,
-      2: <GroupAddIcon />,
-      3: <VideoLabelIcon />,
-      4: <AmpStoriesIcon />,
-      5: <SettingsIcon />,
+      1: <Battery20Icon />,
+      2: <Battery50Icon />,
+      3: <Battery60Icon />,
+      4: <Battery80Icon />,
+      5: <BatteryFullIcon />,
     }
 
     return (
