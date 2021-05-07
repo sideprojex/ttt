@@ -1,0 +1,347 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f0f0f0;
+  font-family: "Quicksand", sans-serif;
+  line-height: 1.6;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+}
+
+.grid3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+}
+
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ffffff;
+  height: 10vh;
+}
+
+.nav-items {
+  display: flex;
+}
+
+.nav-items li {
+  list-style: none;
+}
+
+.links {
+  padding: 2rem;
+  font-size: 1.2rem;
+  color: #6b727e;
+  transition: all 0.3s ease-in;
+  text-decoration: none;
+}
+
+h1 .links {
+  padding-left: 0.1rem;
+  font-size: 2rem;
+}
+
+.ham-icon {
+  font-size: 1.7rem;
+  cursor: pointer;
+  display: none;
+}
+
+.logo img {
+  height: 80px;
+  object-fit: contain;
+}
+
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 40px;
+}
+
+.my-stepper {
+  background-color: #f0f0f0 !important;
+  margin-top: 1rem;
+}
+
+/* HERO SECTION */
+.hero {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  font-weight: normal;
+}
+
+.hero p {
+  margin: 0.5rem 0;
+  font-size: 1.5rem;
+}
+
+.social-media-banner {
+  margin: 1.5rem 0;
+  /* height: 500px; */
+}
+
+/* INFO SECTION! */
+
+.info-section {
+  margin: 7rem 0;
+}
+
+.info-section h2 {
+  font-size: 2.5rem;
+  margin: 1rem 0;
+  color: #21252b;
+}
+
+.info-section p {
+  font-size: 1.3rem;
+  color: #6b727e;
+}
+
+/* PRICING! */
+.pricing-info {
+  margin-bottom: 3rem;
+}
+
+/* .pricing-info h1 {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 3rem;
+} */
+
+.grid3 .price {
+  text-align: center;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.grid3 .price h2 {
+  margin: 1rem 0;
+}
+
+.grid3 .price h1 {
+  margin: 1rem 0;
+}
+
+.grid3 .price .infos li {
+  padding: 1rem;
+}
+
+.grid3 .price span {
+  color: #ff4b33;
+  font-size: 2.5rem;
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #fff;
+  padding: 12px 30px;
+  background-color: #ff4b33;
+  width: 100%;
+  font-size: 1.2rem;
+}
+
+/* end-info! */
+
+.end-info {
+  margin: 7rem 0;
+}
+
+.end-info h1 {
+  font-size: 2.5rem;
+  margin: 1rem 0;
+  color: #21252b;
+}
+
+.end-info p {
+  font-size: 1.3rem;
+  color: #6b727e;
+}
+
+.end-info-para {
+  margin-bottom: 3rem;
+}
+
+.end-info-other p {
+  margin: 1rem 0;
+}
+
+.apply {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+/* ERROR PAGE! */
+
+.error-page {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.error-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.terms-conditions {
+  background-color: #fff;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  margin-top: 4rem;
+}
+
+/* FOOTER */
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ffffff;
+  color: black;
+  height: 10vh;
+}
+
+.social-icon {
+  color: #6b727e;
+  font-size: 1.5rem;
+  margin: 0.5rem 1rem;
+}
+
+.btn-normal {
+  margin: 0.5rem 0;
+  width: initial;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 600px) {
+  .ham-icon {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    height: initial;
+    justify-content: center;
+  }
+
+  footer {
+    flex-direction: column;
+    height: initial;
+  }
+
+  nav .nav-items {
+    flex-direction: column;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s linear;
+    width: 100%;
+    padding: 0;
+  }
+
+  li {
+    padding: 0.8rem 0rem;
+    width: 100%;
+  }
+
+  nav .ul-show {
+    height: 6.5rem;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+    font-weight: normal;
+  }
+
+  .hero p {
+    margin: 1rem 0;
+    font-size: 1.1rem;
+  }
+
+  .info-section {
+    margin: 1rem 0;
+  }
+
+  .info-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .info-section p {
+    font-size: 1rem;
+    margin-bottom: 2.5rem;
+  }
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .grid3 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .pricing-info {
+    margin: 3rem 0;
+  }
+  .price {
+    margin: 1rem 0;
+  }
+  .end-info h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .end-info p {
+    font-size: 1rem;
+  }
+
+  .end-info-para {
+    margin-top: 0;
+    margin-bottom: 3rem;
+  }
+
+  .end-info-other p {
+    margin: 1rem 0;
+  }
+  .social-media-presence-img {
+    margin-bottom: 2rem;
+  }
+  .why-us-img {
+    margin: 1rem 0;
+  }
+  .end-info {
+    margin: 4rem 0;
+  }
+  .terms-conditions {
+    margin-top: 0.5rem;
+  }
+}
