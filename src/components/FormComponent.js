@@ -38,10 +38,10 @@ const FormComponent = () => {
       alignItems: "center",
     },
     active: {
-      backgroundColor: "#3f51b5",
+      backgroundColor: "red",
     },
     completed: {
-      backgroundColor: "#3f51b5",
+      backgroundColor: "red",
     },
   })
 
